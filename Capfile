@@ -12,8 +12,20 @@ require "capistrano/deploy"
 # require "capistrano/scm/svn"
 # install_plugin Capistrano::SCM::Svn
 # or
+
+
+require "capistrano/setup"
+require "capistrano/deploy"
 require "capistrano/scm/git"
+require 'capistrano/rails'
+require 'capistrano/rvm'
+require 'capistrano/puma'
+require 'capistrano/yarn'
+
 install_plugin Capistrano::SCM::Git
+install_plugin Capistrano::Puma
+install_plugin Capistrano::Puma::Workers
+install_plugin Capistrano::Puma::Nginx
 
 # Include tasks from other gems included in your Gemfile
 #
