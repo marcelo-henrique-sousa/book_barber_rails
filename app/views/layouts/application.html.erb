@@ -10,6 +10,13 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%# if controller_name != 'registrations' %>
+    <%= render 'layouts/navbar' %>
+    <%# end %>
+    <section class="hero is-fullheight-with-navbar">
+      <div class="content">
+        <%= yield %>
+      </div>
+    </section>
   </body>
 </html>
