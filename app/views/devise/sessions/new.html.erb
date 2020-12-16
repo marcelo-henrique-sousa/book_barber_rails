@@ -1,0 +1,48 @@
+<section class="hero is-fullheight">
+		<div class="hero-body">
+			<div class="container has-text-centered">
+				<div class="columns is-8 is-variable ">
+					<div class="column is-two-thirds has-text-left">
+            <figure class="image is-4by4">
+              <%= image_tag("logo.png" ) %>
+                <%# <img src="assets/img/illustrations/worker.svg" alt="Description"> %>
+            </figure>
+						<%# <h1 class="title is-1">Login</h1>
+						<p class="is-size-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eligendi soluta
+							voluptate facere molestiae consequatur.</p>
+						<div class="social-media">
+							<a href="https://facebook.com" target="_blank" class="button is-light is-large"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+							<a href="https://instagram.com" target="_blank" class="button is-light is-large"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+							<a href="https://twitter.com" target="_blank" class="button is-light is-large"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						</div> %>
+					</div>
+					<div class="column is-one-third has-text-left">
+            <h1 class="title is-1">Login</h1>
+						<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+              <div class="field">
+                <%= f.label :email %><br />
+                <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "input is-medium" %>
+              </div>
+
+              <div class="field">
+                <%= f.label :password %><br />
+                <%= f.password_field :password, autocomplete: "current-password", class: "input is-medium" %>
+              </div>
+
+              <% if devise_mapping.rememberable? %>
+                <div class="field">
+                  <%= f.check_box :remember_me, class: 'checkbox' %>
+                  <%= f.label :remember_me %>
+                </div>
+              <% end %>
+
+              <div class="actions">
+                <%= f.submit "Log in", class: "button is-info" %>
+              </div>
+            <% end %>
+            <%= render "devise/shared/links" %>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
