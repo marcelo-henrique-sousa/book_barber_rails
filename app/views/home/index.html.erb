@@ -1,41 +1,39 @@
 <section class="hero is-fullheight is-default is-bold">
 
-    <div class="hero-body">
-        <div class="container">
-            <div class="columns is-vcentered">
-                <div class="column is-5 is-offset-1 landing-caption">
-                    <h1 class="title is-1 is-bold is-spaced">
-                        Awesome, Male.
-                    </h1>
-                    <h2 class="subtitle is-5 is-muted">Get a serius cut, a classic experience and place to feels good. </h2>
-                    <div class="button-wrap">
-                        <a class="button cta is-rounded primary-btn raised is-primary is-light">
-                            Get Started
-                        </a>
-                    </div>
-                </div>
-                <div class="column is-5">
-                    <figure class="image is-4by3">
-                      <%= image_tag("barber_art.png" ) %>
-                        <%# <img src="assets/img/illustrations/worker.svg" alt="Description"> %>
-                    </figure>
-                </div>
-
+  <div class="hero-body">
+      <div class="container">
+          <div class="columns is-vcentered">
+            <div class="column is-5 is-offset-1 landing-caption">
+              <h1 class="title is-1 is-bold is-spaced">
+                Awesome, Male.
+              </h1>
+              <h2 class="subtitle is-4 is-muted">Get a serius cut, a classic experience and place to feels good. </h2>
+              <div class="button-wrap">
+                <%= link_to "Get Started", new_user_session_path, class: 'button is-link is-light' %>
+              </div>
             </div>
-        </div>
-    </div>
-
-    <%# <div class="hero-foot mb-20">
-        <div class="container">
-            <div class="tabs is-centered">
-                <ul>
-                    <li><a><img class="partner-logo" src="assets/img/logos/clients/systek.svg"></a></li>
-                    <li><a><img class="partner-logo" src="assets/img/logos/clients/tribe.svg"></a></li>
-                    <li><a><img class="partner-logo" src="assets/img/logos/clients/kromo.svg"></a></li>
-                    <li><a><img class="partner-logo" src="assets/img/logos/clients/infinite.svg"></a></li>
-                    <li><a><img class="partner-logo" src="assets/img/logos/clients/gutwork.svg"></a></li>
-                </ul>
+            <div class="column is-7">
+              <figure class="image is-8by8">
+                <%= image_tag("chop_chop_nobg.gif" ) %>
+                  <%# <img src="assets/img/illustrations/worker.svg" alt="Description"> %>
+              </figure>
             </div>
-        </div>
-    </div> %>
+
+          </div>
+      </div>
+  </div>
+
+  <%# <div class="hero-foot mb-20">
+      <div class="container">
+          <div class="tabs is-centered">
+              <ul>
+                  <li><a><img class="partner-logo" src="assets/img/logos/clients/systek.svg"></a></li>
+                  <li><a><img class="partner-logo" src="assets/img/logos/clients/tribe.svg"></a></li>
+                  <li><a><img class="partner-logo" src="assets/img/logos/clients/kromo.svg"></a></li>
+                  <li><a><img class="partner-logo" src="assets/img/logos/clients/infinite.svg"></a></li>
+                  <li><a><img class="partner-logo" src="assets/img/logos/clients/gutwork.svg"></a></li>
+              </ul>
+          </div>
+      </div>
+  </div> %>
 </section>

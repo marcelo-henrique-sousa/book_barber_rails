@@ -24,6 +24,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'pg'
 # bulma for rails 
 gem "bulma-rails", "~> 0.9.0"
+# devise for auth
+gem 'devise'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
